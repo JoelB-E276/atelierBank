@@ -19,7 +19,6 @@ $account =$_POST;
       <input name="addAccount" class="form-control btn btn-danger my-2" type="submit" value="Envoyer">
     </fomr> 
 
-
   </aside>
   <section class="col-12 col-md-8">
     <h3>Vos infos</h3>
@@ -28,23 +27,19 @@ $account =$_POST;
         <li class="list-group-item"><?php echo htmlspecialchars($account["name"]); ?></li>
         <li class="list-group-item"><?php echo htmlspecialchars($account["amount"]); ?></li>
       </ul>
-    <?php endif;?>
-
-
-
-  
+    <?php endif;?>  
   </section>
 </div>
 
 
 
+ <?php include "layout/footer.php";?>
 
-
-
-
-
-
-
-<?php
- include "layout/footer.php";
-?>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+ <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+ <script src="js/plugins.js"></script>
+ <script src="js/main.js"></script>
+ </body>
+</html>
